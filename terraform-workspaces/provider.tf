@@ -5,8 +5,7 @@ terraform {
         version = "~> 6.0"
     }
   }
-
-    backend "s3" {
+backend "s3" {
     bucket = "roboshop-tf-state-bucket"
     key = "workspaces.tfstate"
     encrypt = true
@@ -14,6 +13,7 @@ terraform {
     
 }
 
+    
 
 }
 
